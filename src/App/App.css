@@ -1,0 +1,120 @@
+body {
+  color: white;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.app-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  height: 70px;
+}
+
+.user-greeting {
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+
+.app-title-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.app-title {
+  font-size: 2rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.user-actions {
+  margin-left: auto;
+  margin-right: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.emerald-funds {
+  font-size: 20px;
+  color: white;
+  margin-right: 20px;
+}
+
+.emerald-amount {
+  font-size: 24px;
+  color: #4CAF50;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.user-actions button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-actions button:hover {
+  background-color: #45a049;
+}
+
+.main-content {
+  padding-top: 150px;
+  min-height: calc(100vh - 80px);
+}
+
+.campaigns-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.campaign-list,
+.campaign-form {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,288 @@
+.campaign-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.campaign-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.submit-btn {
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    min-width: 150px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+.keywords-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.keywords-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+.keyword-input {
+    width: calc(100% - 90px);
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.add-keyword-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+    height: 42px;
+}
+
+.add-keyword-btn:hover {
+    background-color: #45a049;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.spinner,
+.spinner-small {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+}
+
+.spinner-small {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.suggestions-list {
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 5px;
+    padding: 5px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    color: #333;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.selected-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.keyword-tag {
+    background-color: #4CAF50;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.remove-keyword {
+    background: transparent;
+    border: none;
+    color: black;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+
+.select {
+    width: 100%;
+}
+
+.select__control {
+    border-color: #ccc;
+}
+
+.select__control--is-focused {
+    border-color: #4CAF50;
+}
+
+.form-row {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 0;
+}
+
+
+@media (max-width: 480px) {
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.form-row select,
+.form-row input[type="number"],
+.form-row input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.input-with-symbol {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.input-with-symbol input {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 30px 10px 10px;
+}
+
+
+.currency-symbol {
+    position: absolute;
+    right: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.select__menu .select__option {
+    color: black;
+}
+.disabled-input {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    color: white;
+    border-radius: 4px;
+}
+
+.disabled-input input {
+    color: white !important;
+    background-color: transparent;
+    cursor: not-allowed;
+}
+
+.disabled-input .currency-symbol {
+    color: white !important;
+}
